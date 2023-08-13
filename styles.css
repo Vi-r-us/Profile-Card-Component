@@ -1,18 +1,124 @@
+/* general styling */
 body {
+    background-color: hsl(185, 75%, 39%);
+    background-image: url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg');
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+
+    margin: 0px;
+    padding: 0px;
+}
+p {
     margin: 0px;
     padding: 0px;
 }
 main {
-    background-color: lightcoral;
-    
+    font-family: 'Kumbh Sans';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* card styling */
+.card {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* Upper Section -> card cover */
+.upper-section {
+    width: 340px;
+    height: 140px;
+    background-image: url("images/bg-pattern-card.svg");
+}
+
+/* Middle Section -> User Details */
+.middle-section {
     display: flex;
     flex-direction: column;
-    text-align: center;
     align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding-top: 78px;
+    padding-bottom: 30px;
+}
+.middle-section div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.name {
+    font-size: 18px;
+    font-weight: 700;
+}
+.age {
+    color: hsl(227, 10%, 46%);
+    font-size: 18px;
+    font-weight: 400;
+}
+.city {
+    color: hsl(227, 10%, 46%);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Lower Section -> User Stats*/
+.lower-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 30px 0px;
+    border-top: 1px solid hsla(0, 0%, 59%, 0.274);
+}
+.lower-section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.stats {
+    font-size: 18px;
+    font-weight: 700;
+}
+.title {
+    color: hsl(227, 10%, 46%);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+/* User Photo (avatar) */
+.avatar-section {
+    width: 106px;
+    height: 106px;
+
+    background-color: white;
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: absolute;
+    top: 90px;
+    left: 117px;
+    right: 117px;
+}
+.avatar-section img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    align-self: center;
 }
 
 .attribution { 
     font-size: 11px; 
+    color: white;
     text-align: center; 
 }
 .attribution a { 
