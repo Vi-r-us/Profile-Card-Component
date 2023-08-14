@@ -1,10 +1,6 @@
 /* general styling */
 body {
     background-color: hsl(185, 75%, 39%);
-    background-image: url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg');
-    background-position: right bottom, left top;
-    background-repeat: no-repeat, repeat;
-
     margin: 0px;
     padding: 0px;
 }
@@ -19,6 +15,20 @@ main {
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+/* svg image styling */
+.top-img {
+    position: fixed;
+    top: -489px;
+    left: 0px;
+    z-index: -1;
+}
+.bottom-img {
+    position: fixed;
+    bottom: -489px;
+    right: 0px;
+    z-index: -1;
 }
 
 /* card styling */
